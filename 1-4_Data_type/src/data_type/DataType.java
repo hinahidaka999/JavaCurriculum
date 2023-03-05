@@ -17,6 +17,5 @@ public class DataType {
 		String name = "日高は";
 		String message = "javaを学習しています。";
 		System.out.println(name + message);
-		
 	}
 }
