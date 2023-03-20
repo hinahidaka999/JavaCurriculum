@@ -8,10 +8,11 @@ public class ConditionalExpression {
 //		boolean型変数 rain を宣言し、今日の天気が雨なら「true」雨でないなら「false」を代入して下さい。
 //		もし rain が true ならコンソールに「DVDを見ます。」と false なら「外で遊びます。」と表示して下さい。
 		boolean rain = false;
-		if (rain == true)
+		if (rain == true) {
 			System.out.println("DVDを見ます。");
-		else
+		} else {
 			System.out.println("外で遊びます。");
+		}
 //		問２）
 //		String型変数 name に任意の名前を入れて下さい。
 //		int型変数 score に「0~100」までの乱数を代入して下さい。
@@ -22,14 +23,15 @@ public class ConditionalExpression {
 		String name = "山田太郎";
 		Random rand = new Random();
 	    int score = rand.nextInt(101);
-	    if (score <= 40)
+	    if (score <= 40) {
 	    	System.out.println(name + "さんは" + score + "点です。もう少し頑張りましょう。");
-	    else if (score <= 60)
+	    } else if (score <= 60) {
 	    	System.out.println(name + "さんは" + score + "点です。もう少しでした。");
-	    else if (score <= 80)
+	    } else if (score <= 80) {
 	    	System.out.println(name + "さんは" + score + "点です。よくできました。");
-	    else
+	    } else {
 	    	System.out.println(name + "さんは" + score + "点です。たいへんよくできました。");
+	    }
 //		問３）
 //		①変数 isTired を定義し、0 か 1 を代入する。（どちらを代入しても構わない。）
 //		②変数 study を定義し、文字列 "カリキュラム" を代入する。
@@ -38,10 +40,11 @@ public class ConditionalExpression {
 //		④もし変数 isTired が 0 であれば、変数 study を利用して「カリキュラムを続けます。」と表示する。
 	    byte isTired = 0;
 		String study = "カリキュラム";
-		if (isTired == 0)
+		if (isTired == 0) {
 			System.out.println("私はとても元気です。");
-		else
+		} else {
 			System.out.println("私は疲れています。");
+		}
 		System.out.println(isTired == 0 ? study + "を続けます。" : "");
 	}
 }
